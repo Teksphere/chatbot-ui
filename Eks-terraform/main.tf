@@ -35,6 +35,7 @@ data "aws_subnets" "public" {
     name   = "availability-zone"
     values = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1f"]
   }
+}
 #cluster provision
 resource "aws_eks_cluster" "example" {
   name     = "EKS_CLOUD"
